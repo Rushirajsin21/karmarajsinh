@@ -91,6 +91,7 @@
     <Content Include="images\w2.png" />
     <Content Include="images\w3.png" />
     <Content Include="index.html" />
+    <Content Include="index1.aspx" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\custom.js" />
     <Content Include="js\ion.rangeSlider.min.js" />
@@ -98,10 +99,25 @@
     <Content Include="product.html" />
     <Content Include="testimonial.html" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
     <Content Include="why.html" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index1.aspx.cs">
+      <DependentUpon>index1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index1.aspx.designer.cs">
+      <DependentUpon>index1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\style.css.map" />
