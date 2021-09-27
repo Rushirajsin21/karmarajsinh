@@ -1,3 +1,5 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="product1.aspx.cs" Inherits="ShopingSite.product1" %>
+
 <!DOCTYPE html>
 <html>
 
@@ -33,7 +35,7 @@
 </head>
 
 <body class="sub_page">
-
+    <form id="form1" runat="server">
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -41,38 +43,38 @@
         <div class="container-fluid">
           <div class="top_nav_container">
             <div class="contact_nav">
-              <a href="">
+              <asp:LinkButton ID="phone" runat="server" href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
                   Call : +01 123455678990
                 </span>
-              </a>
-              <a href="">
+              </asp:LinkButton>
+              <asp:LinkButton  ID="envelope" runat="server" href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
                   Email : demo@gmail.com
                 </span>
-              </a>
+              </asp:LinkButton>
             </div>
             <from class="search_form">
-              <input type="text" class="form-control" placeholder="Search here...">
-              <button class="" type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </button>
+              <asp:TextBox ID="srch" runat="server" type="text" class="form-control" placeholder="Search here...">
+                  </asp:TextBox>
+               <asp:LinkButton ID="btnsubmit"  runat="server" type="submit" class="bg-warning bs-tooltip-right rounded-right align-content-center">
+                   </asp:LinkButton>
             </from>
             <div class="user_option_box">
-              <a href="" class="account-link">
+              <asp:LinkButton ID="myaccount" runat="server" href="" class="account-link">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <span>
                   My Account
                 </span>
-              </a>
-              <a href="" class="cart-link">
+              </asp:LinkButton>
+              <asp:LinkButton ID="cart" runat="server" href="" class="cart-link">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 <span>
                   Cart
                 </span>
-              </a>
+              </asp:LinkButton>
             </div>
           </div>
 
@@ -81,32 +83,32 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
+            <asp:LinkButton ID="index" runat="server" class="navbar-brand" href="index1.aspx">
               <span>
                 Minics
               </span>
-            </a>
+            </asp:LinkButton>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
+            <asp:Button ID="navtog" runat="server" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              
+            </asp:Button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ">
                 <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <asp:LinkButton ID="home" runat="server" class="nav-link" href="index1.aspx">Home <span class="sr-only">(current)</span></asp:LinkButton>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
+                  <asp:LinkButton ID="about" class="nav-link" runat="server" href="about1.aspx"> About</asp:LinkButton>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="product.html">Products</a>
+                  <asp:LinkButton ID="product" runat="server" class="nav-link" href="product1.aspx">Products</asp:LinkButton>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="why.html">Why Us</a>
+                  <asp:LinkButton ID="why" runat="server" class="nav-link" href="why1.aspx">Why Us</asp:LinkButton>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="testimonial.html">Testimonial</a>
+                  <asp:LinkButton ID="testimonial" runat="server" class="nav-link" href="testimonial1.aspx">Testimonial</asp:LinkButton>
                 </li>
               </ul>
             </div>
@@ -131,12 +133,12 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p1.png" alt="">
-              <a href="" class="add_cart_btn">
+              <asp:Image ID="p1" runat="server" src="images/p1.png" alt="" />
+              <asp:LinkButton ID="addtocart1" runat="server" href="" class="add_cart_btn">
                 <span>
                   Add To Cart
                 </span>
-              </a>
+              </asp:LinkButton>
             </div>
             <div class="detail-box">
               <h5>
@@ -160,12 +162,12 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p2.png" alt="">
-              <a href="" class="add_cart_btn">
+              <asp:Image ID="p2" runat="server" src="images/p2.png" alt="" />
+              <asp:LinkButton ID="addtocart2" runat="server" href="" class="add_cart_btn">
                 <span>
                   Add To Cart
                 </span>
-              </a>
+              </asp:LinkButton>
             </div>
             <div class="detail-box">
               <h5>
@@ -189,12 +191,12 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p3.png" alt="">
-              <a href="" class="add_cart_btn">
+              <asp:Image ID="p3" runat="server" src="images/p3.png" alt="" />
+              <asp:LinkButton ID="addtocart3" runat="server" href="" class="add_cart_btn">
                 <span>
                   Add To Cart
                 </span>
-              </a>
+              </asp:LinkButton>
             </div>
             <div class="detail-box">
               <h5>
@@ -218,12 +220,12 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p4.png" alt="">
-              <a href="" class="add_cart_btn">
+              <asp:Image ID="p4" runat="server" src="images/p4.png" alt="" />
+              <asp:LinkButton ID="addtocart4" runat="server" href="" class="add_cart_btn">
                 <span>
                   Add To Cart
                 </span>
-              </a>
+              </asp:LinkButton>
             </div>
             <div class="detail-box">
               <h5>
@@ -247,12 +249,12 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p5.png" alt="">
-              <a href="" class="add_cart_btn">
+              <asp:Image ID="p5" runat="server" src="images/p5.png" alt="" />
+              <asp:LinkButton ID="addtocart5" runat="server" href="" class="add_cart_btn">
                 <span>
                   Add To Cart
                 </span>
-              </a>
+              </asp:LinkButton>
             </div>
             <div class="detail-box">
               <h5>
@@ -276,12 +278,12 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p6.png" alt="">
-              <a href="" class="add_cart_btn">
+             <asp:Image ID="p6" runat="server" src="images/p6.png" alt="" />
+              <asp:LinkButton ID="addtocart6" runat="server" href="" class="add_cart_btn">
                 <span>
                   Add To Cart
                 </span>
-              </a>
+              </asp:LinkButton>
             </div>
             <div class="detail-box">
               <h5>
@@ -305,12 +307,12 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p7.png" alt="">
-              <a href="" class="add_cart_btn">
+              <asp:Image ID="p7" runat="server" src="images/p7.png" alt="" />
+              <asp:LinkButton ID="addtocart" runat="server" href="" class="add_cart_btn">
                 <span>
                   Add To Cart
                 </span>
-              </a>
+              </asp:LinkButton>
             </div>
             <div class="detail-box">
               <h5>
@@ -334,12 +336,12 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p8.png" alt="">
-              <a href="" class="add_cart_btn">
+              <asp:Image ID="p8" runat="server" src="images/p8.png" alt="" />
+              <asp:LinkButton ID="addtocar8" runat="server" href="" class="add_cart_btn">
                 <span>
                   Add To Cart
                 </span>
-              </a>
+              </asp:LinkButton>
             </div>
             <div class="detail-box">
               <h5>
@@ -363,12 +365,12 @@
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="images/p9.png" alt="">
-              <a href="" class="add_cart_btn">
+              <asp:Image ID="p9" runat="server" src="images/p9.png" alt="" />
+              <asp:LinkButton ID="addtocart9" runat="server" href="" class="add_cart_btn">
                 <span>
                   Add To Cart
                 </span>
-              </a>
+              </asp:LinkButton>
             </div>
             <div class="detail-box">
               <h5>
@@ -391,9 +393,9 @@
         </div>
       </div>
       <div class="btn_box">
-        <a href="" class="view_more-link">
+        <asp:LinkButton ID="view_more" runat="server" href="" class="view_more-link">
           View More
-        </a>
+        </asp:LinkButton>
       </div>
     </div>
   </section>
@@ -408,11 +410,11 @@
         <div class="col-md-3">
           <div class="info_contact">
             <h5>
-              <a href="" class="navbar-brand">
+              <asp:LinkButton ID="sitename" runat="server" href="" class="navbar-brand">
                 <span>
                   Minics
                 </span>
-              </a>
+              </asp:LinkButton>
             </h5>
             <p>
               <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -445,29 +447,29 @@
             </h5>
             <ul>
               <li>
-                <a href="index.html">
+                <asp:LinkButton ID="index1" runat="server" href="index1.aspx">
                   Home
-                </a>
+                </asp:LinkButton>
               </li>
               <li>
-                <a href="about.html">
+                <asp:LinkButton ID="about1" runat="server" href="about1.aspx">
                   About
-                </a>
+                </asp:LinkButton>
               </li>
               <li>
-                <a href="product.html">
+                <asp:LinkButton ID="products1" runat="server" href="product1.aspx">
                   Products
-                </a>
+                </asp:LinkButton>
               </li>
               <li>
-                <a href="why.html">
+                <asp:LinkButton ID="why1" runat="server" href="why1.aspx">
                   Why Us
-                </a>
+                </asp:LinkButton>
               </li>
               <li>
-                <a href="testimonial.html">
+                <asp:LinkButton ID="testimonial1" runat="server" href="testimonial1.aspx">
                   Testimonial
-                </a>
+                </asp:LinkButton>
               </li>
             </ul>
           </div>
@@ -477,25 +479,25 @@
             <h5>
               Newsletter
             </h5>
-            <form action="">
-              <input type="email" placeholder="Enter your email">
-              <button>
-                Subscribe
-              </button>
-            </form>
+            
+              <asp:TextBox ID="mail" runat="server" type="email" placeholder="Enter your email">
+                  </asp:TextBox>
+              <asp:Button ID="Subscribe" runat="server" Text="Subscribe">
+                
+              </asp:Button>
             <div class="social_box">
-              <a href="">
+              <asp:LinkButton ID="facebook" runat="server" href="">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
+              </asp:LinkButton>
+              <asp:LinkButton ID="twitter" runat="server" href="">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
+              </asp:LinkButton>
+              <asp:LinkButton ID="instagram" runat="server" href="">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="">
+              </asp:LinkButton>
+              <asp:LinkButton ID="youtube" runat="server" href="">
                 <i class="fa fa-youtube" aria-hidden="true"></i>
-              </a>
+              </asp:LinkButton>
             </div>
           </div>
         </div>
@@ -524,7 +526,7 @@
   <!-- custom js -->
   <script src="js/custom.js"></script>
 
-
+</form>
 </body>
 
 </html>
