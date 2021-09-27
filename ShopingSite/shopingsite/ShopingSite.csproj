@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about1.aspx" />
     <Content Include="about.html" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\font-awesome.min.css" />
@@ -90,7 +91,6 @@
     <Content Include="images\w1.png" />
     <Content Include="images\w2.png" />
     <Content Include="images\w3.png" />
-    <Content Include="index.html" />
     <Content Include="index1.aspx" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\custom.js" />
@@ -103,6 +103,13 @@
     <Content Include="why.html" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="about1.aspx.cs">
+      <DependentUpon>about1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about1.aspx.designer.cs">
+      <DependentUpon>about1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index1.aspx.cs">
       <DependentUpon>index1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

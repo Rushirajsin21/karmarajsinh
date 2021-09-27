@@ -88,7 +88,7 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <asp:LinkButton ID="index" runat="server" class="navbar-brand" href="index.html">
+            <asp:LinkButton ID="index" runat="server" class="navbar-brand" href="index1.aspx">
               <span>
                 Minics
               </span>
@@ -101,19 +101,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ">
                 <li class="nav-item active">
-                  <asp:LinkButton ID="home" runat="server" class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></asp:LinkButton>
+                  <asp:LinkButton ID="home" runat="server" class="nav-link" href="index1.aspx">Home <span class="sr-only">(current)</span></asp:LinkButton>
                 </li>
                 <li class="nav-item">
-                  <asp:LinkButton ID="about" runat="server" class="nav-link" href="about.html"> About</asp:LinkButton>
+                  <asp:LinkButton ID="about" runat="server" class="nav-link" href="about1.aspx"> About</asp:LinkButton>
                 </li>
                 <li class="nav-item">
-                  <asp:LinkButton ID="products" runat="server" class="nav-link" href="product.html">Products</asp:LinkButton>
+                  <asp:LinkButton ID="products" runat="server" class="nav-link" href="product1.aspx">Products</asp:LinkButton>
                 </li>
                 <li class="nav-item">
-                  <asp:LinkButton ID="whyus" runat="server" class="nav-link" href="why.html">Why Us</asp:LinkButton>
+                  <asp:LinkButton ID="whyus" runat="server" class="nav-link" href="why1.aspx">Why Us</asp:LinkButton>
                 </li>
                 <li class="nav-item">
-                  <asp:LinkButton ID="testimonial" runat="server" class="nav-link" href="testimonial.html">Testimonial</asp:LinkButton>
+                  <asp:LinkButton ID="testimonial" runat="server" class="nav-link" href="testimonial1.aspx">Testimonial</asp:LinkButton>
                 </li>
               </ul>
             </div>
@@ -764,27 +764,27 @@
             </h5>
             <ul>
               <li>
-                <asp:LinkButton ID="home1" runat="server" href="index.html">
+                <asp:LinkButton ID="home1" runat="server" href="index1.aspx">
                   Home
                 </asp:LinkButton>
               </li>
               <li>
-                <asp:LinkButton ID="about1" runat="server" href="about.html">
+                <asp:LinkButton ID="about1" runat="server" href="about1.aspx">
                   About
                 </asp:LinkButton>
               </li>
               <li>
-                <asp:LinkButton ID="product1" runat="server" href="product.html">
+                <asp:LinkButton ID="product1" runat="server" href="product1.aspx">
                   Products
                 </asp:LinkButton>
               </li>
               <li>
-                <asp:LinkButton ID="why_us1" runat="server" href="why.html">
+                <asp:LinkButton ID="why_us1" runat="server" href="why1.aspx">
                   Why Us
                 </asp:LinkButton>
               </li>
               <li>
-                <asp:LinkButton ID="testimonial1"  runat="server" href="testimonial.html">
+                <asp:LinkButton ID="testimonial1"  runat="server" href="testimonial1.aspx">
                   Testimonial
                 </asp:LinkButton>
               </li>
