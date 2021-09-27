@@ -798,7 +798,7 @@
             </h5>
 <%--            <form action="#">--%>
               <asp:TextBox ID="mail" runat="server" type="email" placeholder="Enter your email"></asp:TextBox>
-              <asp:Button ID="subscribe" runat="server" Text="Subscribe">
+              <asp:Button ID="subscribe" runat="server" class="bg-warning" Text="Subscribe">
                 
               </asp:Button>
             <%--</form>--%>

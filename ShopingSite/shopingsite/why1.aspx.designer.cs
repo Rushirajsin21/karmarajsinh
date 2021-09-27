@@ -11,7 +11,7 @@ namespace ShopingSite
 {
 
 
-    public partial class abou1
+    public partial class why1
     {
 
         /// <summary>
@@ -60,13 +60,13 @@ namespace ShopingSite
         protected global::System.Web.UI.WebControls.LinkButton btnsubmit;
 
         /// <summary>
-        /// mysccount control.
+        /// myaccount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton mysccount;
+        protected global::System.Web.UI.WebControls.LinkButton myaccount;
 
         /// <summary>
         /// cart control.
@@ -96,78 +96,6 @@ namespace ShopingSite
         protected global::System.Web.UI.WebControls.Button navtog;
 
         /// <summary>
-        /// home1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton home1;
-
-        /// <summary>
-        /// about control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton about;
-
-        /// <summary>
-        /// product control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton product;
-
-        /// <summary>
-        /// why_us control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton why_us;
-
-        /// <summary>
-        /// testimonial control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton testimonial;
-
-        /// <summary>
-        /// readmore control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton readmore;
-
-        /// <summary>
-        /// about_img control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image about_img;
-
-        /// <summary>
-        /// sitename control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton sitename;
-
-        /// <summary>
         /// home control.
         /// </summary>
         /// <remarks>
@@ -177,13 +105,13 @@ namespace ShopingSite
         protected global::System.Web.UI.WebControls.LinkButton home;
 
         /// <summary>
-        /// abouts control.
+        /// abouts1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton abouts;
+        protected global::System.Web.UI.WebControls.LinkButton abouts1;
 
         /// <summary>
         /// product1 control.
@@ -195,22 +123,103 @@ namespace ShopingSite
         protected global::System.Web.UI.WebControls.LinkButton product1;
 
         /// <summary>
-        /// why control.
+        /// whys1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton why;
+        protected global::System.Web.UI.WebControls.LinkButton whys1;
 
         /// <summary>
-        /// testimonial1 control.
+        /// testimonials1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton testimonial1;
+        protected global::System.Web.UI.WebControls.LinkButton testimonials1;
+
+        /// <summary>
+        /// w1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image w1;
+
+        /// <summary>
+        /// w2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image w2;
+
+        /// <summary>
+        /// w3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image w3;
+
+        /// <summary>
+        /// sitename control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton sitename;
+
+        /// <summary>
+        /// home1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton home1;
+
+        /// <summary>
+        /// about1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton about1;
+
+        /// <summary>
+        /// products1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton products1;
+
+        /// <summary>
+        /// why_1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton why_1;
+
+        /// <summary>
+        /// testimonials control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton testimonials;
 
         /// <summary>
         /// mail control.
@@ -222,13 +231,13 @@ namespace ShopingSite
         protected global::System.Web.UI.WebControls.TextBox mail;
 
         /// <summary>
-        /// subcribe control.
+        /// Subscribe control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button subcribe;
+        protected global::System.Web.UI.WebControls.Button Subscribe;
 
         /// <summary>
         /// facebook control.

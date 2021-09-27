@@ -60,6 +60,7 @@
               <asp:TextBox ID="srch" runat="server" type="text" class="form-control" placeholder="Search here...">
                   </asp:TextBox>
                <asp:LinkButton ID="btnsubmit"  runat="server" type="submit" class="bg-warning bs-tooltip-right rounded-right align-content-center">
+                    &#128269;  
               </asp:LinkButton>
             </from>
             <div class="user_option_box">
@@ -199,7 +200,7 @@
                 </asp:LinkButton>
               </li>
               <li>
-                <asp:LinkButton ID="about1" runat="server" href="about1.aspx">
+                <asp:LinkButton ID="abouts" runat="server" href="about1.aspx">
                   About
                 </asp:LinkButton>
               </li>

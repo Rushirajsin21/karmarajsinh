@@ -95,12 +95,12 @@
     <Content Include="js\custom.js" />
     <Content Include="js\ion.rangeSlider.min.js" />
     <Content Include="js\jquery-3.4.1.min.js" />
-    <Content Include="product.html" />
     <Content Include="product1.aspx" />
-    <Content Include="testimonial.html" />
+    <Content Include="Register.aspx" />
+    <Content Include="testimonial1.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
-    <Content Include="why.html" />
+    <Content Include="why1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="about1.aspx.cs">
@@ -125,12 +125,33 @@
       <DependentUpon>product1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testimonial1.aspx.cs">
+      <DependentUpon>testimonial1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testimonial1.aspx.designer.cs">
+      <DependentUpon>testimonial1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="why1.aspx.cs">
+      <DependentUpon>why1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="why1.aspx.designer.cs">
+      <DependentUpon>why1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
