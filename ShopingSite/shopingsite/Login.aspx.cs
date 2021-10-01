@@ -12,7 +12,7 @@ namespace ShopingSite
 {
     public partial class Login : System.Web.UI.Page
     {
-        SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\RUSHIRAJSINH\Documents\shopping.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\RUSHIRAJSINH\Documents\shopping.mdf;Integrated Security=True;Connect Timeout=30Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\RUSHIRAJSINH\Documents\GitHub\karmarajsinh\ShopingSite\shopping.mdf;Integrated Security=True;Connect Timeout=30");
         protected void Page_Load(object sender, EventArgs e)
         {
             lgmsg.Visible = false;
