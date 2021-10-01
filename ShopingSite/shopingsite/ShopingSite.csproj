@@ -95,6 +95,7 @@
     <Content Include="js\custom.js" />
     <Content Include="js\ion.rangeSlider.min.js" />
     <Content Include="js\jquery-3.4.1.min.js" />
+    <Content Include="Login.aspx" />
     <Content Include="product1.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="testimonial1.aspx" />
@@ -116,6 +117,13 @@
     </Compile>
     <Compile Include="index1.aspx.designer.cs">
       <DependentUpon>index1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="product1.aspx.cs">
       <DependentUpon>product1.aspx</DependentUpon>

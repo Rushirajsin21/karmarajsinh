@@ -66,7 +66,9 @@
 &#128269;   
               </asp:LinkButton>
              </from>
-            
+            <asp:Button ID="Login" runat="server" Text="Login" class="btn btn-primary" OnClick="Login_Click" />
+              &nbsp;&nbsp;&nbsp;
+              <asp:Button ID="Register" runat="server" Text="Register" class="btn btn-danger" OnClick="Register_Click" />
             <div class="user_option_box">
               <asp:LinkButton ID="myaccount" runat="server" href="" class="account-link">
                 <i class="fa fa-user" aria-hidden="true"></i>
@@ -94,7 +96,7 @@
               </span>
             </asp:LinkButton>
 
-            <asp:Button ID="navtog" runat="server" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <asp:Button ID="navtog" runat="server" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" OnClick="navtog_Click">
             </asp:Button>
               
 

@@ -11,7 +11,12 @@ namespace ShopingSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((string)Session["logedin"] == "loged_in")
+            {
+                Login.Visible = false;
+                Register.Visible = false;
 
+            }
         }
         //protected void btnsubmit_onlclick(object sender , EventArgs e)
         //{
@@ -21,6 +26,21 @@ namespace ShopingSite
         protected void Button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        protected void navtog_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Login_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
+
+        protected void Register_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Register.aspx");
         }
     }
 }
