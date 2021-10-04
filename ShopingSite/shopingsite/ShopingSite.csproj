@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about1.aspx" />
+    <Content Include="admin.aspx" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\ion.rangeSlider.min.css" />
@@ -110,6 +111,13 @@
     </Compile>
     <Compile Include="about1.aspx.designer.cs">
       <DependentUpon>about1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="index1.aspx.cs">
       <DependentUpon>index1.aspx</DependentUpon>
