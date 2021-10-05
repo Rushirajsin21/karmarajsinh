@@ -56,21 +56,22 @@
                 </span>
               </asp:LinkButton>
             </div>
-            <from class="search_form">
-              <asp:TextBox ID="srch" runat="server" type="text" class="form-control" placeholder="Search here...">
-                  </asp:TextBox>
-               <asp:LinkButton ID="btnsubmit"  runat="server" type="submit" class="bg-warning bs-tooltip-right rounded-right align-content-center">
-                    &#128269;  
-                   </asp:LinkButton>
-            </from>
+         <from class="search_form">
+
+                           &nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+             </from>
+            <asp:Button ID="Login" runat="server" Text="Login" class="btn btn-success" OnClick="Login_Click" />
+            &nbsp;&nbsp;  <asp:Button ID="Register" runat="server" Text="Register" class="btn btn-primary" OnClick="Register_Click" />
+              &nbsp;&nbsp;
+              <asp:Button ID="logout" runat="server" Visible="false" Text="Logout" class="btn btn-danger" OnClick="logout_Click" />
             <div class="user_option_box">
-              <asp:LinkButton ID="myaccount" runat="server" href="" class="account-link">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <span>
-                  My Account
-                </span>
-              </asp:LinkButton>
-              <asp:LinkButton ID="cart" runat="server" href="" class="cart-link">
+              <asp:LinkButton ID="cart" runat="server"  class="cart-link" OnClick="cart_Click">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 <span>
                   Cart
@@ -131,23 +132,25 @@
         </h2>
       </div>
       <div class="row">
+          <asp:Repeater ID="Repeater1" runat="server">
+              <ItemTemplate>
         <div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <asp:Image ID="p1" runat="server" src="images/p1.png" alt="" />
-              <asp:LinkButton ID="addtocart1" runat="server" href="" class="add_cart_btn">
+              <asp:Image ID="p1" runat="server" ImageUrl='<%#Eval("product_imgpath") %>' alt="" />
+              <a ID="addtocart1"  href="cart.aspx?name=<%#Eval("product_name")%>" class="add_cart_btn" >
                 <span>
                   Add To Cart
                 </span>
-              </asp:LinkButton>
+              </a>
             </div>
             <div class="detail-box">
               <h5>
-                Product Name
+                  <%#Eval("product_name") %>
               </h5>
               <div class="product_info">
                 <h5>
-                  <span>$</span> 300
+                  <span>$</span> <%#Eval("product_price") %>
                 </h5>
                 <div class="star_container">
                   <i class="fa fa-star" aria-hidden="true"></i>
@@ -160,7 +163,9 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4">
+                  </ItemTemplate>
+              </asp:Repeater>
+        <%--<div class="col-sm-6 col-lg-4">
           <div class="box">
             <div class="img-box">
               <asp:Image ID="p2" runat="server" src="images/p2.png" alt="" />
@@ -391,7 +396,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>--%>
       </div>
       <div class="btn_box">
         <asp:LinkButton ID="view_more" runat="server" href="" class="view_more-link">

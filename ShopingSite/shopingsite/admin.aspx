@@ -58,7 +58,7 @@
             border-width:2px;*/
             border-color:black;
         }
-        #category1{
+        #add_product{
              float:right;
             width:85%;
             height:90%;
@@ -68,7 +68,7 @@
             border-width:2px;*/
             border-color:black;
         }
-        #gallery1{
+        #order{
               float:right;
             width:85%;
             height:90%;
@@ -94,6 +94,11 @@
            <div id="admin1" runat="server" class="border">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user fa-lg" aria-hidden="true">&nbsp;<asp:LinkButton 
                    ID="adminslink" runat="server" ForeColor="Black" OnClick="adminslink_Click" 
                    CausesValidation="False"> Add Admins</asp:LinkButton></i>
+</div>
+       <br />
+        <div id="addproduct" runat="server" class="border">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user fa-lg" aria-hidden="true">&nbsp;<asp:LinkButton 
+                   ID="LinkButton1" runat="server" ForeColor="Black" 
+                   CausesValidation="False" OnClick="LinkButton1_Click"> Add Product</asp:LinkButton></i>
 </div>
            <br />
            <div id="admin_list" runat="server" class="border">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-list-alt fa-lg" aria-hidden="true"> 
@@ -181,6 +186,59 @@
            </asp:Repeater>
 
    </div>
+       <div id="add_product" runat="server"><h1 align="center">Add Product</h1>
+
+            <div class="mb-3 col-12">
+    <label for="exampleInputEmail1" class="form-label">Product Name:</label><asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="product_name" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;<asp:TextBox ID="product_name" runat="server"  class="form-control"  aria-describedby="emailHelp"></asp:TextBox>
+  </div>
+               <div class="mb-3 col-12">
+                       <label for="exampleInputPa`ssword1" class="form-label">Product Image:<asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="fileupload2" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+</label>
+                   <asp:FileUpload ID="fileupload2" runat="server" class="form-control" type="file"  />
+                    <div class="mb-3 col-12">
+    <label for="exampleInputEmail1" class="form-label">Price :</label><asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="price" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;<asp:TextBox ID="price" runat="server"  class="form-control"  aria-describedby="emailHelp"></asp:TextBox>
+  </div>
+                   <br /><br />
+                   &nbsp;
+                   <asp:Button ID="product_add" runat="server" Text="Add" type="submit" class="btn btn-primary" Width="96px" OnClick="product_add_Click"   ></asp:Button>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <asp:Button ID="product_clear" runat="server" Text="Clear" class="btn btn-danger" Width="95px" CausesValidation="False" OnClick="product_clear_Click"   />
+
+                   <h3 align="center"><asp:Label ID="galmsg" runat="server" Visible="false"></asp:Label><asp:Label ID="imgmsg" runat="server" Visible="false"></asp:Label></h3>
+
+               </div>
+            <asp:Repeater ID="Repeater2" runat="server" >
+               <HeaderTemplate>
+                   <table align="center" border="1" cellpadding="10px" >
+                       <tr>
+                           <th>product Name</th>
+                           <th>Product Image</th>
+                           <th>Product Price in $</th>
+                           
+                          
+                       </tr>
+               </HeaderTemplate>
+               <ItemTemplate>
+                       <tr>
+                           <td  ><%#Eval("product_name") %> </td>
+                           <td >
+                               <asp:Image ID="Image1" runat="server" ImageUrl='<%#Eval("product_imgpath") %>' Height="50px" Width="50px"/></td>
+                           <td><%#Eval("product_price") %></td>
+                          
+                           <td><a   href="editproduct.aspx?id=<%#Eval("product_name")%>"  >Edit
+</a></td>
+                           <td><a href="deleteproduct.aspx?name=<%#Eval("product_name") %>"  >Delete</a></td>
+                           
+                       </tr>
+                  
+               </ItemTemplate>
+               <FooterTemplate>
+                   </table>
+               </FooterTemplate>
+           </asp:Repeater>
+       </div>
        <div id="order" runat="server">
            <h1 align="center">Order List </h1>
        </div>

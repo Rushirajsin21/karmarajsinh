@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="about1.aspx" />
     <Content Include="admin.aspx" />
+    <Content Include="cart.aspx" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\ion.rangeSlider.min.css" />
@@ -76,7 +77,9 @@
     <Content Include="css\style.css" />
     <Content Include="adminlogin.aspx" />
     <Content Include="delete.aspx" />
+    <Content Include="deleteproduct.aspx" />
     <Content Include="editadmin.aspx" />
+    <Content Include="editproduct.aspx" />
     <Content Include="images\about-img.jpg" />
     <Content Include="images\apply-img.png" />
     <Content Include="images\client.jpg" />
@@ -102,10 +105,10 @@
     <Content Include="js\jquery-3.4.1.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="product1.aspx" />
+    <Content Include="purchase.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="testimonial1.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
     <Content Include="why1.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +126,13 @@
     <Compile Include="admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cn.cs" />
     <Compile Include="adminlogin.aspx.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
@@ -138,12 +148,26 @@
     <Compile Include="delete.aspx.designer.cs">
       <DependentUpon>delete.aspx</DependentUpon>
     </Compile>
+    <Compile Include="deleteproduct.aspx.cs">
+      <DependentUpon>deleteproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deleteproduct.aspx.designer.cs">
+      <DependentUpon>deleteproduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="editadmin.aspx.cs">
       <DependentUpon>editadmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="editadmin.aspx.designer.cs">
       <DependentUpon>editadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editproduct.aspx.cs">
+      <DependentUpon>editproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editproduct.aspx.designer.cs">
+      <DependentUpon>editproduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="index1.aspx.cs">
       <DependentUpon>index1.aspx</DependentUpon>
@@ -167,6 +191,13 @@
       <DependentUpon>product1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purchase.aspx.cs">
+      <DependentUpon>purchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="purchase.aspx.designer.cs">
+      <DependentUpon>purchase.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -180,13 +211,6 @@
     </Compile>
     <Compile Include="testimonial1.aspx.designer.cs">
       <DependentUpon>testimonial1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="why1.aspx.cs">
       <DependentUpon>why1.aspx</DependentUpon>

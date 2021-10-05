@@ -16,6 +16,7 @@ namespace ShopingSite
         {
             admins1.Visible = false;
             order.Visible = false;
+            add_product.Visible = false;
             if ((string)Session["admin_role"] != "Super Admin")
             {
                 admin1.Visible = false;
@@ -26,6 +27,12 @@ namespace ShopingSite
             da1.Fill(dt1);
             Repeater1.DataSource = dt1;
             Repeater1.DataBind();
+            string sql = "select * from product where status=1";
+            SqlDataAdapter da = new SqlDataAdapter(sql, cn.con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            Repeater2.DataSource = dt;
+            Repeater2.DataBind();
         }
 
         protected void adminslink_Click(object sender, EventArgs e)
@@ -69,6 +76,43 @@ namespace ShopingSite
         protected void clear_Click(object sender, EventArgs e)
         {
             admin_name.Text = admin_role.Text = password.Text = Retypepassword.Text = "";
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            add_product.Visible = true;
+        }
+
+        protected void product_add_Click(object sender, EventArgs e)
+        {
+           
+                string path = Server.MapPath("~/images/");
+                fileupload2.SaveAs(path + fileupload2.FileName);
+                string st = "~/images/";
+                string img = st + fileupload2.FileName;
+                string sql = "insert into product values('" +product_name.Text + "' , '" + img + "' ,'" + price.Text + "' , 1)";
+                SqlDataAdapter da = new SqlDataAdapter(sql, cn.con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (!da.Equals(null))
+                {
+                    add_product.Visible = true;
+                    galmsg.Text = "Product Added";
+                    galmsg.Visible = true;
+                }
+                else
+                {
+                    galmsg.Text = "Product Not Added";
+                    galmsg.Visible = true;
+
+                }
+            
+        }
+
+        protected void product_clear_Click(object sender, EventArgs e)
+        {
+            product_name.Text = price.Text = "";
+            fileupload2.Dispose();
         }
     }
 }

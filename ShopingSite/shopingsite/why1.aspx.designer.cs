@@ -42,31 +42,31 @@ namespace ShopingSite
         protected global::System.Web.UI.WebControls.LinkButton envelope;
 
         /// <summary>
-        /// srch control.
+        /// Login control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox srch;
+        protected global::System.Web.UI.WebControls.Button Login;
 
         /// <summary>
-        /// btnsubmit control.
+        /// Register control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnsubmit;
+        protected global::System.Web.UI.WebControls.Button Register;
 
         /// <summary>
-        /// myaccount control.
+        /// logout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton myaccount;
+        protected global::System.Web.UI.WebControls.Button logout;
 
         /// <summary>
         /// cart control.

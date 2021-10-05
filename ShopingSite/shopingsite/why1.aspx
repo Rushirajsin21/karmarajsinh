@@ -56,22 +56,22 @@
                 </span>
               </asp:LinkButton>
             </div>
-            <from class="search_form">
-              <asp:TextBox ID="srch" runat="server" type="text" class="form-control" placeholder="Search here...">
-                  </asp:TextBox>
-               <asp:LinkButton ID="btnsubmit"  runat="server" type="submit" class="bg-warning bs-tooltip-right rounded-right align-content-center">
-                   &#128269;   
+          <from class="search_form">
 
-                   </asp:LinkButton>
-            </from>
+                           &nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+             </from>
+            <asp:Button ID="Login" runat="server" Text="Login" class="btn btn-success" OnClick="Login_Click" />
+            &nbsp;&nbsp;  <asp:Button ID="Register" runat="server" Text="Register" class="btn btn-primary" OnClick="Register_Click" />
+              &nbsp;&nbsp;
+              <asp:Button ID="logout" runat="server" Visible="false" Text="Logout" class="btn btn-danger" OnClick="logout_Click" />
             <div class="user_option_box">
-              <asp:LinkButton ID="myaccount" runat="server" href="" class="account-link">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <span>
-                  My Account
-                </span>
-              </asp:LinkButton>
-              <asp:LinkButton ID="cart" runat="server" href="" class="cart-link">
+              <asp:LinkButton ID="cart" runat="server"  class="cart-link" OnClick="cart_Click">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 <span>
                   Cart

@@ -34,9 +34,10 @@ namespace ShopingSite
             SqlDataAdapter da = new SqlDataAdapter(sql, cn.con);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            Session["admin_role"] = dt.Rows[0]["admin_role"];
+            
             if (dt.Rows.Count > 0)
             {
+                
                 Session["admin_logedin"] = "loged_in";
                 Session["admin_role"] = dt.Rows[0]["admin_role"];
                 //lgmsg.Visible = true;
@@ -52,6 +53,7 @@ namespace ShopingSite
             }
             else
             {
+                lgmsg.Text = "Invalid Credintial";
                 lgmsg2.Visible = true;
 
 
