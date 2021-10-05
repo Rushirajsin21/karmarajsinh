@@ -74,9 +74,13 @@
     <Content Include="css\ion.rangeSlider.min.css" />
     <Content Include="css\responsive.css" />
     <Content Include="css\style.css" />
+    <Content Include="adminlogin.aspx" />
+    <Content Include="delete.aspx" />
+    <Content Include="editadmin.aspx" />
     <Content Include="images\about-img.jpg" />
     <Content Include="images\apply-img.png" />
     <Content Include="images\client.jpg" />
+    <Content Include="images\download.jpg" />
     <Content Include="images\fevicon.png" />
     <Content Include="images\p1.png" />
     <Content Include="images\p2.png" />
@@ -118,6 +122,28 @@
     </Compile>
     <Compile Include="admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cn.cs" />
+    <Compile Include="adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delete.aspx.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delete.aspx.designer.cs">
+      <DependentUpon>delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editadmin.aspx.cs">
+      <DependentUpon>editadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editadmin.aspx.designer.cs">
+      <DependentUpon>editadmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="index1.aspx.cs">
       <DependentUpon>index1.aspx</DependentUpon>

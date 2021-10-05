@@ -12,7 +12,6 @@ namespace ShopingSite
 {
     public partial class Register : System.Web.UI.Page
     {
-        SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\RUSHIRAJSINH\Documents\shopping.mdf;Integrated Security=True;Connect Timeout=30");
         protected void Page_Load(object sender, EventArgs e)
         {
             Session["register_start"] = "register";
@@ -32,11 +31,11 @@ namespace ShopingSite
         protected void rgbtnregister_Click(object sender, EventArgs e)
         {
             string sql = "select Username from login where Username='" + rgusername.Text + "'";
-            SqlDataAdapter da = new SqlDataAdapter(sql, cn);
+            SqlDataAdapter da = new SqlDataAdapter(sql, cn.con);
             DataTable dt = new DataTable();
             da.Fill(dt);
             string sql1 = "select Email from login where Email='" + rgemail.Text + "'";
-            SqlDataAdapter da1 = new SqlDataAdapter(sql1,cn);
+            SqlDataAdapter da1 = new SqlDataAdapter(sql1,cn.con);
             DataTable dt1 = new DataTable();
             da1.Fill(dt1);
 
@@ -58,7 +57,7 @@ namespace ShopingSite
                 rgmsgemail.Visible = false;
 
                 string sql2 = "insert into login values('" + rgusername.Text + "','" + rgemail.Text + "','" + rgpassword.Text + "')";
-                SqlDataAdapter da2 = new SqlDataAdapter(sql2, cn);
+                SqlDataAdapter da2 = new SqlDataAdapter(sql2, cn.con);
                 DataTable dt2 = new DataTable();
                 da2.Fill(dt2);
                 if (!da2.Equals(null))

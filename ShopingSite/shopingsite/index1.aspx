@@ -66,9 +66,9 @@
 &#128269;   
               </asp:LinkButton>
              </from>
-            <asp:Button ID="Login" runat="server" Text="Login" class="btn btn-primary" OnClick="Login_Click" />
+            <asp:Button ID="Login" runat="server" Text="Login" class="btn btn-success" OnClick="Login_Click" />
               &nbsp;&nbsp;&nbsp;
-              <asp:Button ID="Register" runat="server" Text="Register" class="btn btn-danger" OnClick="Register_Click" />
+              <asp:Button ID="Register" runat="server" Text="Register" class="btn btn-primary" OnClick="Register_Click" />
             <div class="user_option_box">
               <asp:LinkButton ID="myaccount" runat="server" href="" class="account-link">
                 <i class="fa fa-user" aria-hidden="true"></i>

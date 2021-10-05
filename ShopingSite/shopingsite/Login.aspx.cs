@@ -12,7 +12,6 @@ namespace ShopingSite
 {
     public partial class Login : System.Web.UI.Page
     {
-        SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\RUSHIRAJSINH\Documents\shopping.mdf;Integrated Security=True;Connect Timeout=30Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\RUSHIRAJSINH\Documents\GitHub\karmarajsinh\ShopingSite\shopping.mdf;Integrated Security=True;Connect Timeout=30");
         protected void Page_Load(object sender, EventArgs e)
         {
             lgmsg.Visible = false;
@@ -34,7 +33,7 @@ namespace ShopingSite
             Session["lgemails"] = lgemail.Text;
             Session["lgpassword"] = lgpassword.Text;
             string sql = "select Username from login where Email='" + Session["lgemails"].ToString() + "' and Password='" + Session["lgpassword"].ToString() + "'";
-            SqlDataAdapter da = new SqlDataAdapter(sql, cn);
+            SqlDataAdapter da = new SqlDataAdapter(sql, cn.con);
             DataTable dt = new DataTable();
             da.Fill(dt);
             if (dt.Rows.Count > 0)
