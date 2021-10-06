@@ -53,13 +53,7 @@
               <asp:LinkButton ID="envelope" runat="server" href="#">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  Email : demo@gmail.com
-                </span>
-              </asp:LinkButton>
-            </div>
-                          <from class="search_form">
-
-                           &nbsp;&nbsp;&nbsp;
+                  Email : d&nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
@@ -67,18 +61,15 @@
 
 
              </from>
+              <asp:Button ID="Admin_Login" runat="server" Text="Admin Login" class="btn btn-warning" OnClick="Admin_Login_Click" />
+              &nbsp;&nbsp;&nbsp;
             <asp:Button ID="Login" runat="server" Text="Login" class="btn btn-success" OnClick="Login_Click" />
             &nbsp;&nbsp;  <asp:Button ID="Register" runat="server" Text="Register" class="btn btn-primary" OnClick="Register_Click" />
               &nbsp;&nbsp;
               <asp:Button ID="logout" runat="server" Visible="false" Text="Logout" class="btn btn-danger" OnClick="logout_Click" />
             <div class="user_option_box">
            
-              <asp:LinkButton ID="cart" runat="server"  class="cart-link" OnClick="cart_Click">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                <span>
-                  Cart
-                </span>
-              </asp:LinkButton>
+              <asp:LinkButton ID="cart" runat="server"  class="cart-link" OnClick="cart_Click"> <i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Cart </span></asp:LinkButton>
             </div>
           </div>
 
@@ -87,11 +78,7 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <asp:LinkButton ID="index" runat="server" class="navbar-brand" href="index1.aspx">
-              <span>
-                Minics
-              </span>
-            </asp:LinkButton>
+            <asp:LinkButton ID="index" runat="server" class="navbar-brand" href="index1.aspx"> <span>Minics </span></asp:LinkButton>
 
             <asp:Button ID="navtog" runat="server" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" OnClick="navtog_Click">
             </asp:Button>
@@ -125,6 +112,14 @@
     <section class="slider_section ">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Welcome to our shop
+                          <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container ">
               <div class="row">
@@ -241,7 +236,7 @@
 <%#Eval("product_name") %>              </h5>
               <div class="product_info">
                 <h5>
-                  <span>$</span> 300
+                  <span>$</span><%#Eval("product_price") %>
                 </h5>
                 <div class="star_container">
                   <i class="fa fa-star" aria-hidden="true"></i>

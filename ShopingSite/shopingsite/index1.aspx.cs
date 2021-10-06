@@ -63,5 +63,10 @@ namespace ShopingSite
         {
             Session.Remove("logedin");
         }
+
+        protected void Admin_Login_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("adminlogin.aspx");
+        }
     }
 }
