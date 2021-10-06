@@ -33,6 +33,16 @@ namespace ShopingSite
             da.Fill(dt);
             Repeater2.DataSource = dt;
             Repeater2.DataBind();
+            string sql3 = "select * from order1";
+            SqlDataAdapter da3 = new SqlDataAdapter(sql3,cn.con);
+            DataTable dt3 = new DataTable();
+            da3.Fill(dt3);
+            if (!da3.Equals(null))
+            {
+                Repeater3.DataSource = dt3;
+                Repeater3.DataBind();
+            }
+
         }
 
         protected void adminslink_Click(object sender, EventArgs e)

@@ -241,6 +241,29 @@
        </div>
        <div id="order" runat="server">
            <h1 align="center">Order List </h1>
+           <asp:Repeater ID="Repeater3" runat="server">
+
+               <HeaderTemplate>
+                   <table align="center" border="1" cellpadding="1">
+                       <tr>
+                           <th>Product Name</th>
+                           <th>Product Image</th>
+                           <th>Product Value</th>
+                           <th>Product Value</th>
+                       </tr>
+               </HeaderTemplate>
+               <ItemTemplate>
+                   <tr>
+                   <td> <%#Eval("product_nm") %></td>
+                       <td><asp:Image ID="img1" runat="server" ImageUrl='<%#Eval("product_img") %>' Height="100px" Width="100px" /></td>
+                       <td><%#Eval("product_price") %></td>
+                       </tr>
+               </ItemTemplate>
+               <FooterTemplate>
+                   </table>
+
+               </FooterTemplate>
+           </asp:Repeater>
        </div>
        
        

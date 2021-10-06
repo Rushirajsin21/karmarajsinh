@@ -28,17 +28,17 @@
                        </tr>
                </ItemTemplate>
                <FooterTemplate>
-                   <tr>
+                   
                        <td colspan="2" align="left">Total Rs. </td><td colspan="2" align="right"><%#sum() %></td>
                                       </table>
-
+                       
                </FooterTemplate>
            </asp:Repeater>
             
           
             <asp:Button ID="purchase" Text="Purchase" runat="server" class="btn btn-warning" OnClick="purchase_Click" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <asp:LinkButton runat="server" OnClick="Unnamed1_Click">Home</asp:LinkButton>
+           <asp:LinkButton ID="home" runat="server" OnClick="Unnamed1_Click">Home</asp:LinkButton>
                  <br />
             <br />
             <h3>
