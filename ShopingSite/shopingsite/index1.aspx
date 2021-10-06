@@ -50,17 +50,15 @@
                   Call : +01 123455678990
                 </span>
               </asp:LinkButton>
-              <asp:LinkButton ID="envelope" runat="server" href="#">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  Email : d&nbsp;&nbsp;&nbsp;
+             
+                &nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-             </from>
+             
               <asp:Button ID="Admin_Login" runat="server" Text="Admin Login" class="btn btn-warning" OnClick="Admin_Login_Click" />
               &nbsp;&nbsp;&nbsp;
             <asp:Button ID="Login" runat="server" Text="Login" class="btn btn-success" OnClick="Login_Click" />

@@ -33,15 +33,6 @@ namespace ShopingSite
         protected global::System.Web.UI.WebControls.LinkButton phone;
 
         /// <summary>
-        /// envelope control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton envelope;
-
-        /// <summary>
         /// Admin_Login control.
         /// </summary>
         /// <remarks>
